@@ -1,8 +1,12 @@
 ### To install
+```
 pip install -r requirements.txt
+```
 
 ### To run tests
+```
 python -m unittest discover -s tests
+```
 
 ### To run
 ```
