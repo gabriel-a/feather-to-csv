@@ -117,3 +117,6 @@ ehthumbs.db
 
 # Test outputs
 test.csv
+
+# Ignore results directory
+test_files/results/*

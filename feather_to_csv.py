@@ -2,14 +2,15 @@ import pandas as pd
 import argparse
 
 
-def convert_feather_to_csv(input_file, output_file):
+def convert_feather_to_csv(input_file, output_file, print_message=True):
     try:
         # Load the .feather file
         data = pd.read_feather(input_file)
 
         # Save the DataFrame to a .csv file
         data.to_csv(output_file, index=False)
-        print(f"CSV file created successfully at: {output_file}")
+        if print_message:
+            print(f"CSV file created successfully at: {output_file}")
         return True
     except Exception as e:
         print(f"Error: {e}")
@@ -23,7 +24,7 @@ def main():
 
     args = parser.parse_args()
 
-    convert_feather_to_csv(args.input_file, args.output_file)
+    convert_feather_to_csv(args.input_file, args.output_file, print_message=False)
 
 
 if __name__ == "__main__":
