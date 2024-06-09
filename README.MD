@@ -87,6 +87,11 @@ python json_to_csv.py path_to_your/SOL_USDT-5m.json path_to_your/SOL_USDT-5m.csv
 python json_to_csv.py C:/data/SOL_USDT-5m.json C:/data/SOL_USDT-5m.csv
 ```
 
+### To Check some plots
+```
+python plot_equity_curve.py
+```
+
 ### Summary
 
 This `README.md` file provides instructions on how to set up and use the JSON and Feather to CSV conversion application, as well as how to run the end-to-end tests. It includes the directory structure, installation steps, usage examples, and details on running tests.
